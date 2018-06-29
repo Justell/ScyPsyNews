@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Sci-psy news</string>
+    <string name="sci_and_psy">News at Science and Psychology</string>
+    <string name="guardian">The Guardian</string>
+    <string name="no_internet_connection">There is no internet connection.</string>
+    <string name="no_articles">No articles.</string>
+</resources>

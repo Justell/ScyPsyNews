@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title_guard"
+            style="@style/title"
+            android:layout_marginTop="@dimen/margins"
+            android:paddingTop="@dimen/margins"
+            android:text="@string/guardian"
+            android:textAllCaps="true"
+            android:textSize="@dimen/textL"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/title_news"
+            style="@style/title"
+            android:layout_marginBottom="@dimen/margins"
+            android:paddingBottom="@dimen/margins"
+            android:text="@string/sci_and_psy"
+            android:textSize="@dimen/textM" />
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:dividerHeight="@dimen/margins"
+            android:orientation="vertical" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/empty_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>
