@@ -26,6 +26,15 @@
             android:textSize="@dimen/textM"
             tools:text="Today is a great day" />
 
+        <TextView
+            android:id="@+id/author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/margins"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textS"
+            tools:text="Author of the article"/>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

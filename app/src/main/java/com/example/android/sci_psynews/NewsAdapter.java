@@ -33,6 +33,11 @@ public class NewsAdapter extends ArrayAdapter<News> {
         //Display the title of published article in that TextView
         titleView.setText(currentArticle.getTitle());
 
+        //Find the TextView with view ID author
+        TextView authorView = (TextView) convertView.findViewById(R.id.author);
+        //Display the author in that TextView
+        authorView.setText(currentArticle.getAuthor());
+
         //Get and asign publishing date to a string
         String stringDateTime = currentArticle.getTime();
         //Split parsed publishing date to date and time

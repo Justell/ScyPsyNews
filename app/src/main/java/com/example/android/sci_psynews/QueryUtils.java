@@ -163,8 +163,14 @@ public final class QueryUtils {
                 String time = currentArticle.getString("webPublicationDate");
                 String url = currentArticle.getString("webUrl");
 
-                News article = new News(title, time, url);
-                news.add(article);
+                JSONArray tagArray = currentArticle.getJSONArray("tags");
+                for (int j = 0; j < tagArray.length(); j++) {
+                    JSONObject tagObject = tagArray.getJSONObject(j);
+                    String author = tagObject.getString("webTitle");
+
+                    News article = new News(title, author, time, url);
+                    news.add(article);
+                }
 
             }
 

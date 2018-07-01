@@ -23,7 +23,7 @@
             style="@style/title"
             android:layout_marginBottom="@dimen/margins"
             android:paddingBottom="@dimen/margins"
-            android:text="@string/sci_and_psy"
+            android:text="@string/sci_news"
             android:textSize="@dimen/textM" />
 
         <ListView

@@ -23,7 +23,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<List<News>> {
 
     private static final int NEWS_LOADER_ID = 1;
-    private static final String GUARDIAN_REQUEST_URL = "https://content.guardianapis.com/science/psychology?section=science&api-key=a75a3df6-5ecd-415a-9afb-35e1efd6d0f5";
+    private static final String GUARDIAN_REQUEST_URL = "https://content.guardianapis.com/search?section=science&show-tags=contributor&api-key=a75a3df6-5ecd-415a-9afb-35e1efd6d0f5";
     private NewsAdapter mAdapter;
     private TextView mEmptyStateTextView;
 
